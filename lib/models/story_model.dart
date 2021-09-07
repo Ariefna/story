@@ -1,15 +1,17 @@
 import 'package:meta/meta.dart';
-import 'user_model.dart';
+import 'package:story/models/user_model.dart';
 
-enum MediaType{
+enum MediaType {
   image,
   video,
 }
+
 class Story {
   final String url;
   final MediaType media;
   final Duration duration;
   final User user;
+
   const Story({
     @required this.url,
     @required this.media,
